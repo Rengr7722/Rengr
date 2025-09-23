@@ -1,0 +1,9 @@
+0. Uninstall all previous version of flow 3d license servers.
+1  Install Flow-3D 11.2. At setup select to install License Server and accept default options for server. If it ask to stop existing server just select skip.
+2. If you get blue screen during setup install sentinel drivers given in the setup then reboot and restart flow3d setup.
+3. Replace original files with crack files from the crack folder.
+4. Place patcher in flow3d hydro install directory for example. "C:\flow3d\11.2",   and run patcher. Click on Patch.
+5. Restart Computer
+6. If you get license error, make sure the service "FLOW-3D v11.2 Service" is running in task manager->Services.
+
+Note: If at program start it crashes or there is license error warning run as Administrator "SolidSQUADLoaderEnabler.reg", confirm to add info into Windows registry and reboot computer
