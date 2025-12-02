@@ -16,3 +16,4 @@ Patching Notes: ( Same as video above)
 Note: If at program start it crashes or there is license error warning run as Administrator "SolidSQUADLoaderEnabler.reg", confirm to add info into Windows registry and reboot computer
 
 
+
