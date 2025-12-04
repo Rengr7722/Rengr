@@ -3,7 +3,7 @@ A. The following link contains flow3d setup
 Hydro::   https://www.mediafire.com/file/3a2arizntci3bmz/FH1.rar/file
 Post ::   https://www.mediafire.com/file/mpj1zyvkw1p44h0/FPOST.rar/file
 
-B.  The following link contains video showing patching tutorial and how to obtain your license
+B.  The following link contains video on how to obtain your license and setup files password.
 
 
 Patching Notes: ( Same as video above)
@@ -18,3 +18,4 @@ Patching Notes: ( Same as video above)
 powershell command for license / patcher::
 
 $sys=Get-CimInstance Win32_ComputerSystemProduct;$data=("$($sys.IdentifyingNumber)$($sys.Name)$($sys.SKUNumber)$($sys.UUID)$($sys.Vendor)$($sys.Version)" -replace '\s','');$hash=[System.BitConverter]::ToString((New-Object System.Security.Cryptography.MD5CryptoServiceProvider).ComputeHash([System.Text.Encoding]::UTF8.GetBytes($data))).Replace("-","");"{0}-{1}-{2}-{3}-{4}" -f $hash.Substring(0,8),$hash.Substring(8,4),$hash.Substring(12,4),$hash.Substring(16,4),$hash.Substring(20,12) | ForEach-Object { "{$_}" }
+
