@@ -10,8 +10,11 @@ Patching Notes: ( Same as video above)
 5. Restart Computer
 6. If you get license error, make sure the service "HYDRO_2023R2" is running in task manager->Services.
 
+Telegram link:: https://t.me/REngrFlow3d
+
 powershell command for license / patcher::
 
 $sys=Get-CimInstance Win32_ComputerSystemProduct;$data=("$($sys.IdentifyingNumber)$($sys.Name)$($sys.SKUNumber)$($sys.UUID)$($sys.Vendor)$($sys.Version)" -replace '\s','');$hash=[System.BitConverter]::ToString((New-Object System.Security.Cryptography.MD5CryptoServiceProvider).ComputeHash([System.Text.Encoding]::UTF8.GetBytes($data))).Replace("-","");"{0}-{1}-{2}-{3}-{4}" -f $hash.Substring(0,8),$hash.Substring(8,4),$hash.Substring(12,4),$hash.Substring(16,4),$hash.Substring(20,12) | ForEach-Object { "{$_}" }
+
 
 
